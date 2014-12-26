@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/**************/
+/* Générique */
+/************/
+
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+.gras {
+	font-weight: bold;
+}
+.grisClair {
+	color: #999999;
+}
+
+label {
+	display: inline-block;
+}
+
+body {
+	min-width: 700px;
+}
+.blueBackground {
+	background: none repeat scroll 0 0 #0886C0;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2) inset, 0 -3px 7px rgba(0, 0, 0, 0.2) inset;
+    color: #FFFFFF;
+	margin-top: 40px;
+    padding: 20px 0;
+    position: relative;
+	text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
+}
+
+section.bienvenue, 
+section.dashboard,
+section.consulter {
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+section.dashboard {
+	display: block;
+	position: relative;
+}
+
+section.dashboard #frameLeft {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	width: 45%;
+}
+
+section.dashboard #frameRight {
+	display: inline-block;
+	overflow: auto;
+	position: relative;
+	vertical-align: top;
+	width: 54%;
+}
+
+section.dashboard .btn-group {
+	margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+section.dashboard #cke_note {
+	margin-top: 20px;
+}
+
+section.consulter table th.date {
+	width: 150px;
+}
+section.dashboard table th.date {
+	text-align: left;
+	width:20%;
+	min-width: 80px;
+}
+
+.show-grid [class*="span"] {
+    background-color: #EEEEEE;
+    border-radius: 3px 3px 3px 3px;
+    line-height: 40px;
+    min-height: 40px;
+    text-align: center;
+}
+
+section.dashboard #envoi, 
+section.dashboard #vider,
+section.dashboard #btnAnnuler,
+a#dashboard,
+a#consulter {
+	margin: 10px;
+}
+
+.boutons {
+	display: block;
+	position: relative;
+	text-align: center;
+}
+
+.podConnexion {
+	max-width: 400px; 
+	margin: 0 auto 10px;
+}
+
+/* notify personnalisée */
+.ui-notify-message {
+	border: 1px solid #1D1D1D;
+}
+
+.ui-notify-message.succes {
+	background-color: #5BB75B;
+    background-image: -moz-linear-gradient(center top , #62C462, #51A351);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    font-size: 12px;
+    width: 170px;
+}
+
+.ui-notify-message.echec {
+	background-color: #DA4F49;
+    background-image: -moz-linear-gradient(center top , #EE5F5B, #BD362F);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	font-size: 12px;
+    width: 170px;
+}
